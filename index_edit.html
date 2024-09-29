@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="bg-light">
+<head>
+    <title>Mod09-Mini-Project</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+<header class="bg-light">
+    <div class="col-md">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">TMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index_dashboard_details.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index_create.html">Create Task</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+  <h1 class="lead display-5 p-5 mt-5 mb-5 bg-light rounded-3 text-center">Task Management Application</h1>
+  <h2 class="lead display-6 m-2 pb-2 bg-light text-center">Edit a task</h2>
+</header>
+<body>
+    <div class="row m-3 pt-4 p-3 bg-primary rounded-3">
+        <select class="form-select-lg bg-light mb-3" aria-label="Default select example">
+            <option selected>Select a Task to Edit</option>
+            <option value="1">Task 1</option>
+            <option value="2">Task 2</option>
+            <option value="3">Task 3</option>
+            <option value="4">Task 4</option>
+        </select>
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+            <input class="form-check-input mt-0 bg-primary" type="checkbox" value="" aria-label="Checkbox for following text input">
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Enter task item here">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+            <input class="form-check-input mt-0 bg-primary" type="checkbox" value="" aria-label="Checkbox for following text input">
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Enter task item here">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+            <input class="form-check-input mt-0 bg-primary" type="checkbox" value="" aria-label="Checkbox for following text input">
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Enter task item here">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+            <input class="form-check-input mt-0 bg-primary" type="checkbox" value="" aria-label="Checkbox for following text input">
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Enter task item here">
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave any task notes here" id="floatingTextarea" style="height: 100px"></textarea>
+            <label for="floatingTextarea" class="m-2">Task Notes</label>
+          </div>
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+          </div>
+        <div class="col-12 m-2 p-2 text-center">
+            <button class="btn btn-success px-5" type="submit">Update Task</button>
+        </div> 
+    </div>
+    
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+    </script>
+    </body>
+</body>
+</html>

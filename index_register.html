@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="bg-light">
+<head>
+    <title>Mod09-Mini-Project</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+<header class="bg-light">
+    <div class="col-md">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">TMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button class="btn btn-outline-primary mx-2" type="submit"><a class="nav-link active" aria-current="page" href="index_signin.html">Sign In</a></button>
+                <button class="btn btn-outline-light mx-2" type="submit"><a class="nav-link active" aria-current="page" href="index_register.html">Register</a></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <h1 class="lead display-5 p-5 mt-5 mb-5 bg-light rounded-3 text-center">Task Management Application</h1>
+      <h2 class="lead display-6 m-2 pb-2 bg-light text-center">Register</h2>
+    </header> 
+</header>
+<body>
+    <form class="row m-2 p-3 bg-primary rounded-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label mt-2">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Jane" required>
+          <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Enter first name
+        </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label mt-2">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Doe" required>
+          <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Enter last name
+        </div>
+        </div>
+        <div class="col-md-4">
+        <label for="exampleFormControlInput1" class="form-label mt-2">Email address</label>
+          <div class="input-group has-validation">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Enter email
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label mt-2">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Enter city
+        </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label mt-2">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Select State</option>
+            <option>State1</option>
+            <option>State2</option>
+            <option>State3</option>
+            <option>State4</option>
+            <option>State..etc.</option>
+          </select>
+          <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Select state
+        </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label mt-2">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Enter zipcode
+        </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check mt-4">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-4 text-center">
+          <button class="btn btn-success mx-5 px-5" type="submit">Submit form</button>
+        </div>
+      </form>
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+    })()
+    </script>
+</body>
+
+</html>
